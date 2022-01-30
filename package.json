@@ -1,0 +1,33 @@
+{
+  "name": "gfg_project",
+  "version": "1.0.0",
+  "description": "Experimental Project for learning",
+  "main": "index.js",
+  "scripts": {
+    "build": "nodemon ./config/index.js",
+    "start": "nodemon ./dist/server_bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAmServerless/GFG_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAmServerless/GFG_Project/issues"
+  },
+  "homepage": "https://github.com/iAmServerless/GFG_Project#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "react": "^18.0.0-beta-24dd07bd2-20211208",
+    "react-dom": "^18.0.0-beta-24dd07bd2-20211208",
+    "webpack": "^5.67.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.135",
+    "swc-loader": "^0.1.15",
+    "webpack-cli": "^4.9.2"
+  }
+}
