@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "nodemon ./config/index.js",
+    "dev": "webpack-dev-server",
     "start": "nodemon ./dist/server_bundle.js",
+    "devboth": "concurrently --kill-others  \"npm run start\" \"npm run dev ",
+    "buildboth":"concurrently --kill-others  \"npm run build\" \"npm run test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,11 +22,14 @@
   },
   "homepage": "https://github.com/iAmServerless/GFG_Project#readme",
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "concurrently": "^7.0.0",
     "express": "^4.17.2",
     "nodemon": "^2.0.15",
     "react": "^18.0.0-beta-24dd07bd2-20211208",
     "react-dom": "^18.0.0-beta-24dd07bd2-20211208",
-    "webpack": "^5.67.0"
+    "webpack": "^5.67.0",
+    "webpack-dev-server": "^4.7.4"
   },
   "devDependencies": {
     "@swc/core": "^1.2.135",
