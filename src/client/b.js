@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function B() {
     console.log("B");
-    return <div>Hai</div>
+    return <div>hey user,we are using webpack</div>
 }
 

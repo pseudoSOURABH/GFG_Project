@@ -12,7 +12,7 @@ export default function A() {
 
     }, [])
     return <div>
-        Hello Buddy
+        Hello Buddy ,whataap?
         <Suspense fallback={<div>Loading...</div>}>
         {showB && <B />}
         </Suspense>

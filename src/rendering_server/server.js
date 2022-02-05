@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
     console.log();
 
-    let html = ReactDOM.renderToString(<A />);
+    let html = ReactDOM.renderToString(<A/>);
 
     res.end(`<html>
         <head></head>
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
         <div id="root">
             ${html}
         </div>
-        <script src="bundle.js"></script>
+        <script  type="module" src="bundle.js"></script>
         </body>
     </html>`)
 
